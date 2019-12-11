@@ -16,7 +16,7 @@ jobs:
     
     - name: Run script
       run: |
-        AZURE_HTTP_USER_AGENT = "python/3.6.4 msrest_azure/0.5.0 azure-mgmt-web/0.40.0 Azure-SDK-For-Python AZURECLI/2.0.47 GITHUBACTIONS_MyRun_bcstestit/cli"
+        AZURE_HTTP_USER_AGENT="python/3.6.4 msrest_azure/0.5.0 azure-mgmt-web/0.40.0 Azure-SDK-For-Python AZURECLI/2.0.47 GITHUBACTIONS_MyRun_bcstestit/cli"
         export AZURE_HTTP_USER_AGENT
         az --version 
         printenv AZURE_HTTP_USER_AGENT
@@ -27,7 +27,7 @@ jobs:
       uses: shashanklive/CLI@f46178c
       with:
         inlineScript: |
-          AZURE_HTTP_USER_AGENT = "python/3.6.4 msrest_azure/0.5.0 azure-mgmt-web/0.40.0 Azure-SDK-For-Python AZURECLI/2.0.47 GITHUBACTIONS_MyCLI_bcstestit/cli"
+          AZURE_HTTP_USER_AGENT="python/3.6.4 msrest_azure/0.5.0 azure-mgmt-web/0.40.0 Azure-SDK-For-Python AZURECLI/2.0.47 GITHUBACTIONS_MyCLI_bcstestit/cli"
           export AZURE_HTTP_USER_AGENT
           printenv AZURE_HTTP_USER_AGENT
           az webapp create  -g testapps -p ASP-testapps-a893 -n thisnewghapp --runtime "node|6.2"
