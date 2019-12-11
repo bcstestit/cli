@@ -1,1 +1,1 @@
-# azure cli action test with useragent
+# azure cli action test with useragent and log
