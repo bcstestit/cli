@@ -18,6 +18,7 @@ jobs:
       uses: shashanklive/CLI@v1
       with:
         inlineScript: |
+          printenv
           az webapp create  -g testapps -p ASP-testapps-a893 -n thisnewghapp --runtime "node|6.2"
           az webapp delete --name thisnewghapp --resource-group testapps
   test:
