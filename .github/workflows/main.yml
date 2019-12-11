@@ -10,7 +10,7 @@ jobs:
     steps:
     
     - name: Azure Login
-      uses: shashanklive/login@v2
+      uses: shashanklive/login@f41fecd
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
     
@@ -22,7 +22,7 @@ jobs:
         az webapp delete --name thisnewghapp --resource-group testapps
 
     - name: Azure CLI script
-      uses: shashanklive/CLI@v2
+      uses: shashanklive/CLI@f46178c
       with:
         inlineScript: |
           printenv
