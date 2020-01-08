@@ -27,7 +27,6 @@ jobs:
       with:
         inlineScript: |
           az --version
-          printenv AZURE_HTTP_USER_AGENT
 
   test:
     needs: build-and-deploy
