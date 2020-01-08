@@ -31,6 +31,6 @@ jobs:
           az webapp delete --name thisnewghapp --resource-group testapps
   test:
     needs: build-and-deploy
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
     - run: echo abc
