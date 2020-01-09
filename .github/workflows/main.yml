@@ -23,6 +23,7 @@ jobs:
         
   deploy2:
     runs-on: self-hosted
+    if: success()
     steps:
       - name: run script
         run: echo abc  
