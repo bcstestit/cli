@@ -20,3 +20,9 @@ jobs:
         az webapp create  -g testapps -p ASP-testapps-a893 -n thisnewghapp --runtime "node|6.2"
         az webapp delete --name thisnewghapp --resource-group testapps
         az account set --subscription "ae181bb5-27ff-4ad7-9061-db96cc1083d4"
+        
+  deploy2:
+    runs-on: self-hosted
+    steps:
+      - name: run script
+        run: echo abc  
